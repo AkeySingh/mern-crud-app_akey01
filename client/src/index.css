@@ -1,0 +1,72 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+}
+.MuiButtonBase-root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.Link_item {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+
+.Link_item:hover {
+  color: rgb(42, 86, 248);
+}
+
+.content-container {
+  position: relative;
+  top: 80px;
+  left: 250px;
+}
+
+.form_container {
+  width: 80%;
+  overflow: hidden;
+  padding: 50px;
+}
+
+/* ------------common css for card body  */
+
+.full_container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main.overflow-x-auto {
+  overflow-x: auto;
+  width: 100%;
+  display: block;
+}
+
+.bodyTheem {
+  border: 0 solid transparent;
+  background-color: #fff;
+  color: #475259;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 100%;
+  box-shadow: 0 0.3125rem 0.3125rem 0 rgba(115, 82, 199, 0.18);
+}
+
+.cardBody {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+}
