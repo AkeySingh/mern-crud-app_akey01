@@ -15,12 +15,16 @@ app.use(express.json())
 app.use(morgan('tiny'))
 // app.use(authJwt())
 app.use('/public/uploads', express.static(__dirname + '/public/uploads'))
+
 app.use(errorHandler)
 
 //Routes
+const usersRoutes = require('./routes/users')
 
 // const api = process.env.API_URL
 const api = 'api'
+
+app.use(`/${api}/users`, usersRoutes)
 
 //Database
 mongoose
@@ -32,7 +36,7 @@ mongoose
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      dbName: 'eshop-database',
+      dbName: 'mern-crud-database',
     }
   )
   .then(() => {
